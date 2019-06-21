@@ -12,22 +12,22 @@
        
 
            <div class="container" style="width: 600px">
-            <form role="form">
+            <form  [formGroup]="registrationForm" (ngSubmit)="!registrationForm.invalid && onSubmit()" novalidate>
               <div class="row">
                 
                 <div class="col-xs-6 col-sm-6 col-md-6">
                   <div class="form-group">
-                    <input type="text" name="first_name" id="first_name" class="form-control input-md" placeholder="First Name">
+                    <input type="text" name="first_name" formControlName="firstName"  class="form-control input-md" placeholder="First Name">
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
                   <div class="form-group">
-                    <input type="text" name="last_name" id="last_name" class="form-control input-md" placeholder="Last Name">
+                    <input type="text" name="last_name" formControlName="phoneNumber"  class="form-control input-md" placeholder="Last Name">
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control input-md" placeholder="E-mail">
+                <input type="email" name="email" formControlName="emailId"  class="form-control input-md" placeholder="E-mail">
               </div>
               <input type="submit" value="SUBSCRIBE NOW" class="btn btn-info btn-block">
             </form>
