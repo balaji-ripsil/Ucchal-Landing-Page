@@ -1,0 +1,40 @@
+.contentz{
+    text-align: center !important;
+    font-family: 'Expert Sans';
+    color: #8d8d8d !important;
+}
+.boxGrid{
+    /* box-shadow: 0 2px 2px 0 #00000054, 0 2px 2px 0 rgba(0, 0, 0, 0.055); */
+height: auto; 
+padding: 80px 5% 80px 5%;
+    /* margin: -325px 0px 0px 0px;
+    background: #ffffff; */
+border-left: 1px solid #efefef;
+border-top: 1px solid #efefef;
+border-bottom: 1px solid #efefef;
+border-right: 1px solid #efefef;
+background-position:  center center;
+
+}
+.titlez{
+    text-align: center;
+    font-family: 'Expert Sans';
+    color: #8d8d8d !important;
+}
+
+.posTer{
+    width: 100%;
+    height: auto;
+}
+
+.icons{
+margin-bottom: 20px;
+}
+
+.fa-1x{
+    color: #8d8d8d !important;
+}
+
+.fa-1x:hover{
+    color: #f5603b !important;
+}

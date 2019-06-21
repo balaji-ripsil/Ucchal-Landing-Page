@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 30px;">
+  <div class="row" *ngFor='let data of content'>
+    <div class="col-md-4 boxGrid">
+      <div class="icons">
+        <h2 style="text-align: center;"><i class="fa fa-mobile fa-1x" aria-hidden="true"></i></h2>
+      </div>
+      <h4 class="titlez">Responsive design</h4>
+      <p class="contentz">
+        {{data.text}}
+      </p>
+    </div>
+    <div class="col-md-4 boxGrid">
+      <div class="icons">
+        <h2 style="text-align: center;">
+          <i class="fa fa-spinner fa-1x" aria-hidden="true"></i>
+        </h2>
+      </div>
+      <h4 class="titlez">Multi-purpose</h4>
+      <p class="contentz">
+        {{data.text}}
+      </p>
+    </div>
+    <div class="col-md-4 boxGrid">
+      <div class="icons">
+        <h2 style="text-align: center;">
+          <i class="fa fa-heart-o fa-1x" aria-hidden="true"></i>
+        </h2>
+      </div>
+      <h4 class="titlez">Friendly support</h4>
+      <p class="contentz">
+        {{data.text}}
+      </p>
+    </div>
+  </div>
+  <br>
+  <img src="../../../assets/image/Poster.jpg" class="posTer">
+</div>
+<br>
