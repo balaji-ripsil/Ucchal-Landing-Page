@@ -1,0 +1,237 @@
+  @media only screen and (min-width: 900px) {
+    header {
+      position: relative;
+      height: 75vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+      height: 600px !important;
+    }
+
+    .ucchalLogo {
+      width: 350px;
+      height: 110px;
+      padding-left: 150px;
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 100%;
+      max-height: 400rem !important;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .containerss {
+      position: relative;
+      z-index: 2;
+      width: 700px;
+      left: 20%
+    }
+
+    .text-white {
+      position: relative;
+      z-index: 1;
+      margin-top: 30px;
+      margin-left: 0px;
+
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.815);
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    .video {
+      height: auto;
+      width: 100%;
+    }
+
+    .btn-block {
+      border: 0px;
+      height: 50px;
+      border-radius: 30px;
+      text-align: center;
+      width: 100%;
+      background-color: #47c9e5 !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 20px;
+      padding-top: 10px;
+
+    }
+
+    .form-control {
+      background: rgb(255, 255, 255);
+      border-radius: 30px;
+      margin-top: 8px;
+      
+    }
+
+    .input-md {
+      height: 50px;
+    }
+
+    .newOnz {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+    .display-3 {
+      font-size: 27px;
+      font-weight: 400;
+    }
+
+    .mb-0 {
+      font-family: 'Expert San';
+    }
+
+    .align-items-center {
+      margin: 40px 30px 80px 0px;
+      box-shadow: 0 14px 88px 0 #0000006b, 0 1px 2px 0 rgba(0, 0, 0, .19);
+      width: 120%;
+border: 1px solid #47c8e546;
+border-radius: 1px;
+    }
+    .formZs{
+      margin: 50px;
+    }
+
+  }
+
+
+
+  @media only screen and (max-width: 900px) {
+    header {
+      position: relative;
+      height: 75vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+      height: 500px !important;
+      background: rgb(167, 53, 53);
+    }
+
+    .ucchalLogo {
+      width: 88px;
+      height: 35px;
+      padding-left: 0px;
+      margin-left: 120px;
+      margin-top: 0px;
+    }
+
+    header video {
+      position: absolute;
+      top: 20.3%;
+      left: 50%;
+      max-width: 100%;
+      max-height: 800rem !important;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .containerss {
+      position: relative;
+      z-index: 1;
+      width: 300px;
+      left: 0%;
+      right: 0%;
+      
+    }
+
+    .text-white {
+      position: relative;
+      z-index: 1;
+     
+
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.637);
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    .video {
+      height: auto;
+      width: 100%;
+    }
+
+    .btn-block {
+      border: 0px;
+      height: auto;
+      border-radius: 30px;
+      text-align: center;
+      width: 100%;
+      background-color: #47c9e5 !important;
+      text-transform: uppercase;
+      font-weight: 600;
+    margin: 20px
+
+    }
+.gridsYtem{
+padding-left: 24.5px;
+}
+
+.grid{
+  width: 100% !important;
+  padding-left: 15px !important;
+}
+
+    .form-control {
+      background: rgb(255, 255, 255);
+      border-radius: 30px;
+    /*   margin-top: 15px !important; */
+      width: 150px;
+      height: 30px !important;
+    }
+
+    .input-md {
+      height: 50px;
+    }
+.placeholder{
+  font-size: 15px !important;
+} 
+    .newOnz {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    .display-3 {
+      font-size: 27px;
+      font-weight: 400;
+      display: none;
+    }
+
+    .mb-0 {
+      font-family: 'Expert San';
+      display: none;
+    }
+
+    .align-items-center {
+     
+    }
+
+  }
