@@ -3,4 +3,5 @@ export class Registration {
     password: string;
     firstName: string;
     lastName: string;
+    result: boolean;
 }

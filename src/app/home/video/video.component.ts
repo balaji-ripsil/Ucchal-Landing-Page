@@ -3,6 +3,7 @@ import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@ang
 import {Registration} from './registration.model';
 import {HomeService} from '../home.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import {MatSnackBar} from '@angular/material';
 @Component({
   selector: 'app-video',
   templateUrl: './video.component.html',
@@ -13,6 +14,8 @@ export class VideoComponent implements OnInit {
   regModel: Registration;
   registrationForm: FormGroup;
   submitted = false;
+  message;
+  action;
 
   emailId = new FormControl('', [Validators.required, Validators.email]);
 
@@ -29,7 +32,7 @@ export class VideoComponent implements OnInit {
     tXt: 'Subscribe and be the first one to get the product'
   }];
 
-  constructor(private fb: FormBuilder, private homeService: HomeService, private router: Router) { }
+  constructor(private fb: FormBuilder, private homeService: HomeService, private router: Router, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.createForm();
@@ -43,6 +46,7 @@ export class VideoComponent implements OnInit {
     });
   }
   onSubmit() {
+    this.message = 'Registered Successfully';
     this.submitted = true;
     if (this.registrationForm.invalid) {
       return;
@@ -56,6 +60,9 @@ export class VideoComponent implements OnInit {
     this.homeService.submit(this.regModel).subscribe(data => {
       this.regModel = data;
       console.log(data);
+      this.snackBar.open(this.message, this.action, {
+        duration: 3000,
+      });
       this.registrationForm.reset();
      /*  this.router.navigate(['account/signin']); */
     }, error => {
