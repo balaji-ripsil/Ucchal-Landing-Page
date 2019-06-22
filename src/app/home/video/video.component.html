@@ -70,15 +70,18 @@
           <h4 class="subTitle"> 
               Subscribe and be the first one to get the product
           </h4>
-      <form class="formZs" [formGroup]="registrationForm" (ngSubmit)="!registrationForm.invalid && onSubmit()" novalidate>
+      <form class="formZs" [formGroup]="registrationForm" (ngSubmit)="onSubmit()" novalidate>
             <div class="row gridsYtem">
-  
+              
               <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
                 <div class="form-group">
                   <input type="text" name="first_name"  formControlName="firstName" class="form-control input-md"
-                    placeholder="First Name">
+                    placeholder="First Name" [ngClass]="{ 'is-invalid': submitted && registrationForm.controls.firstName.errors}">
+                    <div *ngIf="submitted && registrationForm.controls.firstName.errors"  class="invalid-feedback" >
+                        <div *ngIf="registrationForm.controls.firstName.errors.required">First Name is required</div>
+                    </div>
                 </div>
-              </div>
+                </div>
   
               <div class="col-xs-6 col-sm-6 col-md-6 col-6">
                 <div class="form-group">
@@ -88,15 +91,33 @@
               </div>
   
             </div>
-            <div class="form-group gridsYtemss">
-              <input type="email" name="email" formControlName="emailId" class="form-control input-md grid" placeholder="E-mail">
-            </div>
-            <div class="form-group gridsYtemss">
-                <input  name="password" formControlName="password" class="form-control input-md grid" placeholder="Password">
-              </div>
+            <div class="row gridsYtem">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
+                    <div class="form-group"> 
+                        <input type="email" name="email" formControlName="emailId" class="form-control input-md grid" placeholder="E-mail Id"
+                         [ngClass]="{ 'is-invalid': submitted && registrationForm.controls.emailId.errors}"  >
+                         <div *ngIf="submitted && registrationForm.controls.emailId.errors" class="invalid-feedback"  >
+                            <div *ngIf="registrationForm.controls.emailId.errors?.required">Email is required</div>
+                            <div *ngIf="registrationForm.controls.emailId.errors?.email">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    
+                 
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-6">
+                    <input  name="password" formControlName="password" class="form-control input-md grid" placeholder="Password"
+                     [ngClass]="{ 'is-invalid': submitted && registrationForm.controls.password.errors }">
+                    <div *ngIf="submitted && registrationForm.controls.password.errors" class="invalid-feedback">
+                        <div *ngIf="registrationForm.controls.password.errors.required">Password is required</div>
+                        <div *ngIf="registrationForm.controls.password.errors.minlength">Password must be at least 6 characters</div>
+                    </div>
+                  </div>
+               </div>
+           
+               <div style="color:darkcyan"> {{regModel?.result }}</div>
             <div class="btnsSys">
               <h1 class="centerZ">
-                  <button class="btn btn-info btn-block"  type="submit">Register Now</button>
+                  <button class="btn btn-info btn-block"  type="submit" >Register Now</button>
               </h1>
             </div>
           </form>

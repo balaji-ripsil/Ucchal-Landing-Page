@@ -12,6 +12,8 @@ export class VideoComponent implements OnInit {
   hide = true;
   regModel: Registration;
   registrationForm: FormGroup;
+  submitted = false;
+
   emailId = new FormControl('', [Validators.required, Validators.email]);
 
   video = [{
@@ -34,13 +36,17 @@ export class VideoComponent implements OnInit {
   }
   createForm() {
     this.registrationForm = this.fb.group({
-      emailId: ['', Validators.email],
+      emailId: ['', [Validators.email, Validators.required] ],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      firstName: [''],
+      firstName: ['', Validators.required],
       lastName: ['']
     });
   }
   onSubmit() {
+    this.submitted = true;
+    if (this.registrationForm.invalid) {
+      return;
+  }
     console.log('test');
     this.regModel = new Registration();
     this.regModel.emailId = this.registrationForm.controls.emailId.value;
@@ -49,7 +55,8 @@ export class VideoComponent implements OnInit {
     this.regModel.password = this.registrationForm.controls.password.value;
     this.homeService.submit(this.regModel).subscribe(data => {
       this.regModel = data;
-      /* console.log(data); */
+      console.log(data);
+      this.registrationForm.reset();
      /*  this.router.navigate(['account/signin']); */
     }, error => {
       console.log(error);
