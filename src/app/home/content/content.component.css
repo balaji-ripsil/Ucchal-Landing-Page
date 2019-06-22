@@ -47,13 +47,17 @@ margin-bottom: 20px;
 
 .lineOnz{
     margin-top: 5px;
-border-top: #efefef 1px solid;
+border-top: #efefef 2px solid;
 text-align: center;
 }
 
 .newz{
     margin: 0px;
     
+}
+.iconBtn{
+    margin: 5px;
+    /* border: 1px solid #17a2b8; */
 }
 
 @media only screen and (max-width: 900px){
@@ -77,5 +81,5 @@ text-align: center;
 
 .rangePrize{
     text-align: center;
-    color: #8d8d8d ;
+    color: #17a2b8;
 }

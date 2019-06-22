@@ -55,13 +55,15 @@
 
 <header>
     <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="../../../assets/video/Video.mp4" type="video/mp4">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" *ngFor = 'let data of video'>
+        <source src="../../../assets/video/NewVideo.mp4" type="video/mp4">
     </video>
    
     <div class="container-fluid">
       <div class="container">
-          <img src="../assets/image/LogoUcchal.png" width="130" height="80" class="img-responsive">
+        <div *ngFor = 'let data of logo' style="margin-top: 15px">
+          <img [src]="data.ucchalL" width="165" height="100" class="img-responsive">
+        </div>
           <h3 class="pageTitle">
               From the sky-high you opportunity strikes now !
           </h3>

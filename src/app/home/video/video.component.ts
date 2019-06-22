@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class VideoComponent implements OnInit {
 
   video = [{
-    ucchalV: '../../assets/video/Video.mp4'
+    ucchalV: '../../../assets/video/NewVideo.mp4'
   }];
 
   logo = [{
