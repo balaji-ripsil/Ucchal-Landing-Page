@@ -12,7 +12,7 @@ export class VideoComponent implements OnInit {
   }];
 
   logo = [{
-    ucchalL: '../../assets/image/Logo Ucchal Fashion Png (1).png'
+    ucchalL: '../../../assets/image/LogoUcchal.png'
   }];
 
   text = [{

@@ -1,19 +1,241 @@
-  @media only screen and (min-width: 900px) {
+
+
+
+
+
+  @media only screen and (min-width: 900px){
+
+    input[type=text] {
+      padding: 12px 20px;
+  }
+    header {
+        position: relative;
+        background-color: black;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+        height: 650px;
+      }
+      
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+      
+      header .container-fluid {
+        position: relative;
+        z-index: 2;
+      }
+      
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      
+      .img-responsive{
+          left: 45% !important;
+          position: absolute;
+          
+      }
+      .formZs{
+         position: relative;
+          top: 250px !important;
+          width: 600px;
+          left: 250px;
+      }
+      .centerZ{
+        margin-top: 25px;
+      }
+      .pageTitle{
+        color: white; 
+        text-align: center;
+        position: relative;
+        top: 200px;
+        font-family: 'Expert Sans';
+        font-size: 36px;
+      }
+      .subTitle{
+        color: white; 
+        text-align: center;
+        position: relative;
+        top: 200px;
+        font-family: 'Expert San';
+        margin-top: 20px;
+      }
+      .form-control {
+        background: rgb(255, 255, 255);
+        border-radius: 30px;
+        width: 100%;
+        height: 50px !important;
+        margin-top: 10px;
+  }
+
+  .btn-block{
+      border-radius: 30px;
+      height: 50px;
+     
+  }
+  .grid{
+    padding: 12px 20px;
+  }
+    
+  }
+  /* ================================= */
+/* Mobile-Responsive */
+  
+  @media only screen and (max-width: 900px){
+
+
+
+
+    input[type=text] {
+      padding: 12px 20px;
+  }
+  .grid{
+    padding: 12px 20px;
+  }
+    .pageTitle{
+        color: white; 
+        text-align: center;
+        position: relative;
+        top: 140px;
+        font-size: 16px;
+        font-family: 'Expert Sans';
+        
+      }
+      .subTitle{
+        color: white; 
+        text-align: center;
+        position: relative;
+        top: 150px;
+        font-size: 15px;
+        font-family: 'Expert San';
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      .formZs{
+        padding-top: 150px;
+      }
+      .img-responsive{
+        left: 30% !important;
+        position: absolute;
+        top: 5%;
+      }
+
+      header {
+        position: relative;
+        background-color: black;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+        height: 650px;
+      }
+      
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+      
+      header .container-fluid {
+        position: relative;
+        z-index: 2;
+      }
+      
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+       height: 85.5%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      .form-control {
+        background: rgb(255, 255, 255);
+        border-radius: 30px;
+        width: 100%;
+        height: auto !important;
+  }
+  .btn-block{
+    border-radius: 20px;
+}
+      
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* @media only screen and (min-width: 900px) {
     header {
       position: relative;
-      height: 75vh;
-      min-height: 25rem;
-      width: 100%;
+      width: 100% !important;
       overflow: hidden;
-      height: 600px !important;
+      height: 700px !important;
     }
 
+    .logoCtrl{
+      text-align: center;
+      padding-left: 230px
+    }
+    .img-fluid{
+      display: none;
+    }
     .ucchalLogo {
-      width: 350px;
-      height: 110px;
-      padding-left: 150px;
-      margin-left: 150px;
+      width: 200px;
+      height: 100px;
       margin-top: 10px;
+      margin-bottom: 15px !important;
+
+ 
     }
 
     header video {
@@ -32,15 +254,15 @@
     header .containerss {
       position: relative;
       z-index: 2;
-      width: 700px;
-      left: 20%
+      width: 800px;
+      left: 10%
     }
 
     .text-white {
       position: relative;
       z-index: 1;
-      margin-top: 30px;
-      margin-left: 0px;
+      left: 15%;
+      
 
     }
 
@@ -69,7 +291,7 @@
       background-color: #47c9e5 !important;
       text-transform: uppercase;
       font-weight: 600;
-      margin-top: 20px;
+      margin-top: 25px;
       padding-top: 10px;
 
     }
@@ -77,9 +299,22 @@
     .form-control {
       background: rgb(255, 255, 255);
       border-radius: 30px;
-      margin-top: 8px;
-      
+      margin-top: 20px;
     }
+    input{
+text-align: left;
+border-radius: 25px;
+padding-left: 30px;
+padding-right: 30px;
+font-weight: 100;
+    }
+
+    input[type=text] {
+    
+      padding: 12px 20px;
+      
+  }
+
 
     .input-md {
       height: 50px;
@@ -91,23 +326,26 @@
       left: 16px;
     }
     .display-3 {
-      font-size: 27px;
+      font-size:36px;
       font-weight: 400;
+      font-family: 'Expert Sans';
     }
 
     .mb-0 {
       font-family: 'Expert San';
+      color: #fdfdfd;
+      font-size: 24px;
     }
 
     .align-items-center {
       margin: 40px 30px 80px 0px;
-      /* box-shadow: 0 14px 88px 0 #0000006b, 0 1px 2px 0 rgba(0, 0, 0, .19); */
-      width: 120%;
-/* border: 1px solid #47c8e546; */
+
+      width: 100%;
+
 border-radius: 1px;
     }
     .formZs{
-      margin: 50px;
+      margin: 30px;
     }
 
   }
@@ -117,12 +355,10 @@ border-radius: 1px;
   @media only screen and (max-width: 900px) {
     header {
       position: relative;
-      height: 75vh;
-      min-height: 25rem;
       width: 100%;
       overflow: hidden;
-      height: 500px !important;
-      background: rgb(167, 53, 53);
+      height: auto !important;
+      background: rgb(214, 165, 3);
     }
 
     .ucchalLogo {
@@ -135,10 +371,12 @@ border-radius: 1px;
 
     header video {
       position: absolute;
-      top: 20.3%;
+      top: 50%;
       left: 50%;
-      max-width: 100%;
-      max-height: 800rem !important;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
       z-index: 0;
       -ms-transform: translateX(-50%) translateY(-50%);
       -moz-transform: translateX(-50%) translateY(-50%);
@@ -149,7 +387,7 @@ border-radius: 1px;
     header .containerss {
       position: relative;
       z-index: 1;
-      width: 300px;
+      width: 100%;
       left: 0%;
       right: 0%;
       
@@ -158,13 +396,14 @@ border-radius: 1px;
     .text-white {
       position: relative;
       z-index: 1;
+      left:0% !important;
     }
 
     header .overlay {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 45.8%;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.637);
       opacity: 0.7;
@@ -176,34 +415,39 @@ border-radius: 1px;
       width: 100%;
     }
 
+
     .btn-block {
       border: 0px;
       height: auto;
       border-radius: 30px;
       text-align: center;
-      width: 100%;
+      width: 150px !important;
       background-color: #47c9e5 !important;
       text-transform: uppercase;
-      font-weight: 600;
-    margin: 20px
+      font-weight: 100;
+      font-size: 12px;
+    margin: 0px
 
     }
-.gridsYtem{
-padding-left: 24.5px;
-}
 
+.gridsYtemss{
+padding-left: 35px;
+}
+.centerZ{
+  text-align: center;
+  padding-left: 0px;
+  left: 20% !important;
+  position: absolute;
+}
 .grid{
-  width: 100% !important;
+  width: 90% !important;
   padding-left: 15px !important;
 }
 
-    .form-control {
-      background: rgb(255, 255, 255);
-      border-radius: 30px;
-    /*   margin-top: 15px !important; */
-      width: 150px;
-      height: 30px !important;
-    }
+.grips{
+  padding-left: 28px;
+}
+
 
     .input-md {
       height: 50px;
@@ -229,3 +473,4 @@ padding-left: 24.5px;
     }
 
   }
+ */

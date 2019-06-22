@@ -1,40 +1,128 @@
-<header>
+
+ <!-- <header>
   <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="../../assets/video/Video.mp4" type="video/mp4">
+  <video  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" *ngFor='let data of video'>
+    <source [src]="data.ucchalV" type="video/mp4">
   </video>
 
-  <div class="containerss">
-    <img src="../../assets/image/LogoUcchal.png" class="ucchalLogo" >
-    <br>
+   <div class="containerss">
+    <h1 class="logoCtrl" *ngFor='let data of logo'>
+      <img [src]='data.ucchalL' class="ucchalLogo">
+    </h1>
+
     <div class="d-flex text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">From the sky-high you opportunity <span style="font-family: 'Expert San';">strikes
-            now!</span> </h1>
-        <p class="lead mb-0">Subscribe and be the first one to get the product</p>
+
+        <h1 class="display-3">
+          From the sky-high you opportunity strikes now !
+        </h1>
+
+        <p class="lead mb-0">
+          Subscribe and be the first one to get the product
+        </p>
+
         <form class="formZs">
           <div class="row gridsYtem">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-6">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
               <div class="form-group">
                 <input type="text" name="first_name" id="first_name" class="form-control input-md"
                   placeholder="First Name">
               </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-6" style="padding-left: 15px;">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-6">
               <div class="form-group">
                 <input type="text" name="last_name" id="last_name" class="form-control input-md"
                   placeholder="Last Name">
               </div>
             </div>
+
           </div>
-          <div class="form-group gridsYtem">
+          <div class="form-group gridsYtemss">
             <input type="email" name="email" id="email" class="form-control input-md grid" placeholder="E-mail">
           </div>
-          <input type="submit" value="SUBSCRIBE NOW" class="btn btn-info btn-block">
+          <div class="btnsSys">
+            <h1 class="centerZ">
+              <input type="submit" value="SUBSCRIBE NOW" class="btn btn-info btn-block">
+            </h1>
+          </div>
         </form>
       </div>
     </div>
-  </div>
-</header>
+  </div> 
+</header> -->
 
-<app-content></app-content>
+
+
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="../../../assets/video/Video.mp4" type="video/mp4">
+    </video>
+   
+    <div class="container-fluid">
+      <div class="container">
+          <img src="../assets/image/LogoUcchal.png" width="130" height="80" class="img-responsive">
+          <h3 class="pageTitle">
+              From the sky-high you opportunity strikes now !
+          </h3>
+          <h4 class="subTitle"> 
+              Subscribe and be the first one to get the product
+          </h4>
+      <form class="formZs">
+            <div class="row gridsYtem">
+  
+              <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
+                <div class="form-group">
+                  <input type="text" name="first_name" id="first_name" class="form-control input-md"
+                    placeholder="First Name">
+                </div>
+              </div>
+  
+              <div class="col-xs-6 col-sm-6 col-md-6 col-6">
+                <div class="form-group">
+                  <input type="text" name="last_name" id="last_name" class="form-control input-md"
+                    placeholder="Last Name">
+                </div>
+              </div>
+  
+            </div>
+            <div class="form-group gridsYtemss">
+              <input type="email" name="email" id="email" class="form-control input-md grid" placeholder="E-mail">
+            </div>
+            <div class="btnsSys">
+              <h1 class="centerZ">
+                <input type="submit" value="SUBSCRIBE NOW" class="btn btn-info btn-block">
+              </h1>
+            </div>
+          </form>
+        </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<app-content></app-content> 
