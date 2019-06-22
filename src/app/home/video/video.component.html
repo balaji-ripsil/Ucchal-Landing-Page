@@ -68,30 +68,33 @@
           <h4 class="subTitle"> 
               Subscribe and be the first one to get the product
           </h4>
-      <form class="formZs">
+      <form class="formZs" [formGroup]="registrationForm" (ngSubmit)="!registrationForm.invalid && onSubmit()" novalidate>
             <div class="row gridsYtem">
   
               <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
                 <div class="form-group">
-                  <input type="text" name="first_name" id="first_name" class="form-control input-md"
+                  <input type="text" name="first_name"  formControlName="firstName" class="form-control input-md"
                     placeholder="First Name">
                 </div>
               </div>
   
               <div class="col-xs-6 col-sm-6 col-md-6 col-6">
                 <div class="form-group">
-                  <input type="text" name="last_name" id="last_name" class="form-control input-md"
+                  <input type="text" name="last_name"  formControlName="lastName" class="form-control input-md"
                     placeholder="Last Name">
                 </div>
               </div>
   
             </div>
             <div class="form-group gridsYtemss">
-              <input type="email" name="email" id="email" class="form-control input-md grid" placeholder="E-mail">
+              <input type="email" name="email" formControlName="emailId" class="form-control input-md grid" placeholder="E-mail">
             </div>
+            <div class="form-group gridsYtemss">
+                <input  name="password" formControlName="password" class="form-control input-md grid" placeholder="Password">
+              </div>
             <div class="btnsSys">
               <h1 class="centerZ">
-                <input type="submit" value="SUBSCRIBE NOW" class="btn btn-info btn-block">
+                  <button class="btn btn-info btn-block"  type="submit">Register Now</button>
               </h1>
             </div>
           </form>
