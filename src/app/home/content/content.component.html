@@ -2,7 +2,9 @@
   <div class="row" *ngFor='let data of content'>
     <div class="col-md-4 boxGrid">
       <div class="icons">
-        <h2 style="text-align: center;"><i class="fa fa-mobile fa-1x" aria-hidden="true"></i></h2>
+        <h2 style="text-align: center;">
+            <i class="fa fa-heart-o fa-1x" aria-hidden="true"></i>
+        </h2>
        <h3 class="rangePrize">41$ - 50$</h3>
        <h3 class="percenTage">10% off</h3>
       </div>
@@ -14,7 +16,7 @@
     <div class="col-md-4 boxGrid">
       <div class="icons">
         <h2 style="text-align: center;">
-          <i class="fa fa-spinner fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-heart-o fa-1x" aria-hidden="true"></i>
         </h2>
       </div>
       <h3 class="rangePrize">51$ - 100$</h3>
@@ -31,7 +33,7 @@
         </h2>
       </div>
       <h3 class="rangePrize">Above 100$</h3>
-      <h3 class="percenTage">20%</h3>
+      <h3 class="percenTage">20% off</h3>
       <!-- <h4 class="titlez">Friendly support</h4>
       <p class="contentz">
         {{data.text}}
@@ -39,25 +41,35 @@
     </div>
   </div>
   <br>
-  <h1 class="lineOnz"></h1>
+ <!--  <h1 class="lineOnz"></h1> -->
   <img src="../../../assets/image/Poster.jpg" class="posTer">
   <h1 class="lineOnz">
    <!--  <img [src]='data.social'> -->
-   <button mat-fab color="warn">
-      <i class="fa fa-facebook-square fa-2x newz" aria-hidden="true"></i>
+   <a href="#">
+   <button mat-mini-fab color="warn" class="iconBtn">
+      <i class="fa fa-facebook-square fa-lg newz" aria-hidden="true"></i>
    </button>
-   <button mat-fab color="warn">
-      <i class="fa fa-instagram fa-2x newz" aria-hidden="true"></i>
+  </a>
+  <a href="#">
+   <button mat-mini-fab color="warn" class="iconBtn">
+      <i class="fa fa-instagram fa-lg newz" aria-hidden="true"></i>
    </button>
-   <button mat-fab color="warn">
-      <i class="fa fa-twitter-square fa-2x newz" aria-hidden="true"></i>
-   </button>   
-   <button mat-mini-fab color="warn">
-      <i class="fa fa-google-plus-square fa-2x newz" aria-hidden="true"></i>
-   </button>  
-   <button mat-fab color="warn">
-      <i class="fa fa-pinterest-square fa-2x newz" aria-hidden="true"></i>
-   </button>  
+  </a>
+  <a href="#">
+   <button mat-mini-fab color="warn" class="iconBtn">
+      <i class="fa fa-twitter-square fa-lg newz" aria-hidden="true"></i>
+   </button>
+  </a>
+  <a href="#">
+   <button mat-mini-fab color="warn" class="iconBtn">
+      <i class="fa fa-google-plus-square fa-lg newz" aria-hidden="true"></i>
+   </button> 
+  </a>
+  <a href="#">
+   <button mat-mini-fab color="warn" class="iconBtn">
+      <i class="fa fa-pinterest-square fa-lg newz" aria-hidden="true"></i>
+   </button>
+  </a>
   </h1>
 </div>
 <br>

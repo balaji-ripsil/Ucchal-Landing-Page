@@ -15,7 +15,7 @@ export class VideoComponent implements OnInit {
   emailId = new FormControl('', [Validators.required, Validators.email]);
 
   video = [{
-    ucchalV: '../../assets/video/Video.mp4'
+    ucchalV: '../../../assets/video/NewVideo.mp4'
   }];
 
   logo = [{
