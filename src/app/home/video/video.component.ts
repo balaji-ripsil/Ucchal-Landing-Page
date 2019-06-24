@@ -53,7 +53,6 @@ export class VideoComponent implements OnInit {
     if (this.registrationForm.invalid) {
       return;
   }
-    console.log('test');
     this.regModel = new Registration();
     this.regModel.emailId = this.registrationForm.controls.emailId.value;
     this.regModel.firstName = this.registrationForm.controls.firstName.value;
@@ -61,9 +60,9 @@ export class VideoComponent implements OnInit {
     this.regModel.password = this.registrationForm.controls.password.value;
     this.homeService.submit(this.regModel).subscribe(data => {
       this.regModel = data;
-      this.snackBar.open(this.message, this.action, {
+    /*   this.snackBar.open(this.message, this.action, {
         duration: 3000,
-      });
+      }); */
       this.submitted = false;
       this.registrationForm.reset();
      /*  this.router.navigate(['account/signin']); */
