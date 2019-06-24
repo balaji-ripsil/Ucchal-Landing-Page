@@ -16,6 +16,8 @@ export class VideoComponent implements OnInit {
   submitted = false;
   message;
   action;
+// tslint:disable-next-line: max-line-length
+  promotionalMsg = 'Congratulations,  Your promo code is : UCLP1001. Kindly use the promo code on the day of launch to get exciting discounts as launch offer. We are eagerly looking forward for your visit to our website www.ucchalfashion.com. ';
 
   emailId = new FormControl('', [Validators.required, Validators.email]);
 
@@ -59,10 +61,10 @@ export class VideoComponent implements OnInit {
     this.regModel.password = this.registrationForm.controls.password.value;
     this.homeService.submit(this.regModel).subscribe(data => {
       this.regModel = data;
-      console.log(data);
       this.snackBar.open(this.message, this.action, {
         duration: 3000,
       });
+      this.submitted = false;
       this.registrationForm.reset();
      /*  this.router.navigate(['account/signin']); */
     }, error => {

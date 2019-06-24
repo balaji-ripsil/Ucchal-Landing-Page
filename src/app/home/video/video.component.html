@@ -70,7 +70,7 @@
           <h4 class="subTitle"> 
               Subscribe and be the first one to get the product
           </h4>
-      <form class="formZs" [formGroup]="registrationForm" (ngSubmit)="onSubmit()" novalidate>
+      <form class="formZs" [formGroup]="registrationForm"  novalidate>
             <div class="row gridsYtem">
               
               <div class="col-xs-6 col-sm-6 col-md-6 col-6 grips">
@@ -117,7 +117,8 @@
                <div style="color:darkcyan"> {{regModel?.result }}</div>
             <div class="btnsSys">
               <h1 class="centerZ">
-                  <button class="btn btn-info btn-block"  type="submit" >Register Now</button>
+                  <button class="btn btn-info btn-block"  type="submit" 
+                  (click)="onSubmit()" >Register Now</button>
               </h1>
             </div>
           </form>
